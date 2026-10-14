@@ -152,6 +152,7 @@ UPROGS=\
 	$U/_sync\
 	$U/_m_hello\
 	$U/_test_mohak\
+	$U/_test_mohak2\
 
 fs.img: mkfs/mkfs README $(UPROGS)
 	mkfs/mkfs fs.img README $(UPROGS)

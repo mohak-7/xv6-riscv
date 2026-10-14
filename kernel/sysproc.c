@@ -110,3 +110,12 @@ sys_uptime(void)
   release(&tickslock);
   return xticks;
 }
+
+
+// adding a custom system call to say hi
+uint64
+sys_say_hi(void)
+{
+  printk("Mohak uses a system call to say Hi!\n");
+  return 0;
+}
